@@ -1,0 +1,29 @@
+<button class="close" mat-button (click)="close()">X</button>
+<div class="container">
+    <h2><i>Weather By OpenWeatherMap</i></h2>
+    <hr>
+    <div class="data-container">
+        <div class="location">
+
+            <span class="material-icons green-color">circle </span>
+            <h3>{{this.data.name}}</h3>
+        </div>
+        
+        <div class="detail">
+            <div class="div1">
+                <h4>TEMPRATURE: {{this.data.temprature}} C</h4>
+                <h4>FEELS LIKE: {{this.data.feelslike}} C</h4>
+            </div>
+            <div  class="div1">
+                <h4>HUMIDITY: {{this.data.humidity}}% rH</h4>
+                <h4>WINDSPEED: {{this.data.windspeed}} C</h4>
+            </div>
+            <div  class="div1">
+                <h4>MAX TEMPRATURE: {{this.data.maxtemp}} C</h4>
+                <h4>MIN TEMPRATURE: {{this.data.mintemp}} c</h4>
+            </div>
+            
+            <img src="{{this.img}}">
+        </div>
+    </div>
+</div>

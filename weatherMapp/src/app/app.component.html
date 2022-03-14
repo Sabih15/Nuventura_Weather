@@ -1,0 +1,31 @@
+<div class="main">
+  <h1><u>Weather API</u></h1>
+
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>Weather Search</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+
+          <form [formGroup]="locationForm">
+            <mat-form-field appearance="fill">
+              <mat-label>Latitude</mat-label>
+              <input matInput type=number placeholder="Enter lat" formControlName="lat" autocomplete="off" required>
+              <mat-error *ngIf="locationForm.controls.lat.hasError('required')">This is a required field</mat-error>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
+              <mat-label>Longitude</mat-label>
+              <input matInput type=number placeholder="Enter long" formControlName="long" autocomplete="off" required>
+              <mat-error *ngIf="locationForm.controls.long.hasError('required')">This is a required field</mat-error>
+            </mat-form-field>
+            <div class="actions">
+              <button mat-raised-button [disabled]="locationForm.invalid" (click)="submit()"
+                class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+        </mat-card-content>
+      </mat-card>
+     
+
+</div>

@@ -1,0 +1,63 @@
+.green-color {
+    color:green;
+}
+
+.location {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 0px;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+::ng-deep mat-dialog-container {
+    background-color: #90c87b !important;
+ }
+
+h4 {
+    margin: 0px !important;
+    font-size: 13px;
+}
+
+.detail {
+    margin-top: 15px;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40%;
+}
+
+.close.mat-button {
+    top: 0;
+    right: 0;
+    padding: 5px;
+    line-height: 14px;
+    min-width: auto;
+  }
+
+  .container {
+    margin: 5%;
+    border: solid 1px;
+    background-color: white;
+    border-radius: 5px;
+  }
+
+  .data-container {
+      margin: 0 20px;
+  }
+
+.div1 {
+    display: flex;
+    justify-content: space-between;
+}
